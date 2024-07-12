@@ -1,18 +1,9 @@
-defmodule Project1 do
-  @moduledoc """
-  Documentation for `Project1`.
-  """
+defmodule Project1.Project1 do
+  # Base Case
+  def upto(0), do: :ok
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Project1.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def upto(n) do
+    upto(n - 1)
+    IO.puts(n)
   end
 end
